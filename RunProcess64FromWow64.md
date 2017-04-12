@@ -45,7 +45,7 @@ PROCESSOR_ARCHITEW6432|	Not defined|Not defined|AMD64 (*)|
 #### Wrapper scripts to run Batch files and VB scripts in native 64-bit mode
 If you want to run Batch files and scripts in native 64-bit mode, the following wrapper scripts could be used. If the `%PROCESSOR_ARCHITEW6432%` environment variable is defined, the script calls itself recursively, but using the native 64-bit version of the interpreter (cmd/cscript.exe).
 
-__Sample Batch file:__
+_Sample Batch file:_
 ```shell
 IF "%PROCESSOR_ARCHITEW6432%"=="" GOTO native
 %SystemRoot%\Sysnative\cmd.exe /c %0 %*
@@ -55,7 +55,7 @@ exit
 ... the rest of the script ...
 ```
  
-__Sample VB Script:__
+_Sample VB Script:_
 ```vb
 Set WshShell = CreateObject("WScript.Shell")
  
